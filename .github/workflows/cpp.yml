@@ -17,8 +17,10 @@ jobs:
     - name: Install g++
       run: sudo apt-get update && sudo apt-get install -y g++
 
-    - name: Compile C++ code
-      run: g++ -o query_engine main/main.cpp
+    - name: Compile all .cpp files
+      run: |
+        FILES=$(find . -type f -name "*.cpp")
+        g++ -std=c++17 -Wall -Wextra $FILES -o query_engine
 
     - name: Run executable
       run: ./query_engine
