@@ -1,7 +1,7 @@
 #ifndef INDEXING_H
 #define INDEXING_H
 
-#include "common.h"
+#include "../common/common.h"
 
 struct Index {
     std::string column;

@@ -1,7 +1,7 @@
 #ifndef JOIN_H
 #define JOIN_H
 
-#include "common.h"
+#include "../common/common.h"
 #include <memory>
 
 class NestedLoopJoinOperator : public Operator {

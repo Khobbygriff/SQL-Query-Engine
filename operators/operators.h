@@ -1,7 +1,11 @@
 #ifndef OPERATORS_H
 #define OPERATORS_H
 
-#include "common.h"
+#include "../common/common.h"
+#include <unordered_map>
+#include <vector>
+#include <string>
+#include <variant>
 #include <memory>
 
 class TableScanOperator : public Operator {

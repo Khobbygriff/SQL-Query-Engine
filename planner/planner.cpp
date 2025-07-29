@@ -1,7 +1,18 @@
-#include "planner.h"
-#include "operators.h"
-#include "join.h"
+#include "../planner/planner.h"
+#include "../common/common.h"
+#include "../operators/operators.h"
+#include "../aggregation/aggregation.h"
+#include "../indexing/index.h"
+#include "../join/join.h"
+#include "../parser/parser.h"
+#include <memory>
 #include <stdexcept>
+#include <unordered_map>
+#include <vector>
+#include <string>
+#include <variant>
+#include <iostream>
+using namespace std;
 
 QueryPlanner::QueryPlanner(IndexManager &im, std::unordered_map<std::string, Table> &t)
     : index_mgr(im), tables(t) {}

@@ -1,11 +1,11 @@
 #ifndef DATABASE_H
 #define DATABASE_H
 
-#include "parser.h"
-#include "planner.h"
-#include "transaction.h"
-#include "indexing.h"
-#include "engine.h"
+#include "../parser/parser.h"
+#include "../planner/planner.h"
+#include "../transactions/transactions.h"
+#include "../indexing/index.h"
+#include "../engine/engine.h"
 
 class Database {
     std::unordered_map<std::string, Table> tables;

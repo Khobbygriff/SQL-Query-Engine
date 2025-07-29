@@ -1,7 +1,7 @@
 #ifndef AGGREGATION_H
 #define AGGREGATION_H
 
-#include "common.h"
+#include "../common/common.h"
 #include <memory>
 
 class AggregateOperator : public Operator {

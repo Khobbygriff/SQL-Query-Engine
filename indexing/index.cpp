@@ -1,4 +1,4 @@
-#include "indexing.h"
+#include "index.h"
 
 void IndexManager::createIndex(const std::string &table, const std::string &column, Table &data) {
     Index idx;

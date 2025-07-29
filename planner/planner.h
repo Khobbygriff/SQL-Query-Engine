@@ -1,9 +1,14 @@
 #ifndef PLANNER_H
 #define PLANNER_H
 
-#include "common.h"
-#include "indexing.h"
-#include "parser.h"
+#include "../common/common.h"
+#include "../indexing/index.h"
+#include "../operators/operators.h"
+#include "../aggregation/aggregation.h"
+#include "../join/join.h"
+#include "../parser/parser.h"
+#include <memory>
+#include <unordered_map>
 
 class QueryPlanner {
     IndexManager &index_mgr;
