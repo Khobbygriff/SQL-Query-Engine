@@ -88,8 +88,38 @@ indexing: Eliana
 transactions: Nathaniel
 
       NOTES ON SQL
+You’d need to combine all header declarations and implementations, flatten the folder structure, 
+and stack everything in one .cpp file with this rough order:
+
+Code Order for writing all in one single file
 
 ---
+
+```
+
+// Includes and Usings
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+#include <string>
+#include <variant>
+// All enums and typedefs (Value, Row, Table)
+
+// AST Structures: NodeType, ASTNode
+
+// Class Definitions & Implementations:
+// - SQLParser
+// - Operators (TableScanOperator, ProjectionOperator, etc.)
+// - IndexManager
+// - QueryPlanner
+// - ExecutionEngine
+// - TransactionManager
+// - Database
+
+// Main Function:
+// - Create table, insert data, run queries
+
+```
 
  SQL
 SQL stands for Structured Query Language.  
