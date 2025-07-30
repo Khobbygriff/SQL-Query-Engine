@@ -5,13 +5,13 @@ Here’s a clean, clear onboarding message you can send to your teammates—whet
 
 ---
 
-### 📢 **Team Instructions for Working on the SQL Query Engine Project**
+###  **Team Instructions for Working on the SQL Query Engine Project**
 
-Hey team! Welcome aboard 🎉 Here's everything you need to know to start working effectively on your module.
+Hey team! Welcome aboard Here's everything you need to know to start working effectively on your module.
 
 ---
 
-#### 🧭 **Step 1: Clone the Repository**
+####  **Step 1: Clone the Repository**
 
 Open Git Bash or terminal and run:
 
@@ -22,23 +22,31 @@ cd SQL-Query-Engine
 
 ---
 
-#### 🌿 **Step 2: Switch to Your Assigned Branch**
+####  **Step 2: Switch to Your Assigned Branch**
 
 Each member works on a specific module branch. Use the command below with your assigned branch name:
 
+
+Griffith, Mark, Stella, Priscilla, Nathaniel, Eliana, Festus
+
 ```bash
-git checkout parser-module         # Griffith
-git checkout planner-module        # Mark
-git checkout aggregation           # Stella
-git checkout join-algorithms       # Festus
-git checkout indexing              # Eliana
-git checkout transactions          # Nathaniel
-git checkout integration-testing   # [Final integration lead]
+git checkout parser-module         
+git checkout planner-module         
+git checkout aggregation            
+git checkout join                   
+git checkout indexing               
+git checkout transactions           
+git checkout main                  
+git checkout common                
+git checkout engine                
+git checkout operators             
+gti checkout database              
+git checkout testing               
 ```
 
 ---
 
-#### 🛠️ **Step 3: Work Inside Your Module Folder**
+####  **Step 3: Work Inside Your Module Folder**
 
 Each branch has a corresponding folder (e.g., `parser/`, `planner/`, etc.).  
 Place your `.cpp` and `.h` files inside that folder and commit regularly.
@@ -51,7 +59,7 @@ git push origin planner-module
 
 ---
 
-#### 📥 **Step 4: Sync and Review**
+####  **Step 4: Sync and Review**
 
 Before starting your day:
 
@@ -63,7 +71,7 @@ Once your module is ready, create a **Pull Request** from your branch into `main
 
 ---
 
-#### 📚 **Bonus Tips**
+####  **Bonus Tips**
 
 - Comment your code clearly.
 - Use the `README.md` inside your folder (if needed) to explain your logic.
@@ -71,21 +79,6 @@ Once your module is ready, create a **Pull Request** from your branch into `main
 
 ---
 
-*Individual Responsibilities*
-
-integration-testing: All
-
-parser-module: Griffith
-
-planner-module: Mark
-
-aggregation: Stella
-
-join-algorithms: Festus
-
-indexing: Eliana
-
-transactions: Nathaniel
 
       NOTES ON SQL
 You’d need to combine all header declarations and implementations, flatten the folder structure, 
